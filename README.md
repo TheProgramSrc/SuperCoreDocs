@@ -1,20 +1,35 @@
 ---
-description: The best way to create a plugin
+description: Install SuperCoreAPI to create plugins
 ---
 
-# Changelog
+# Installation
 
-## v4.2.9 - 2020/09/20
+## Maven
 
-### Removed
+First, you need to add the repository for the plugin, if you already have the repo skip this step
 
-* Unused update checker.
+```markup
+<!-- SuperCoreAPI -->
+<repository>
+    <id>CodeMC</id>
+    <url>https://repo.codemc.org/repository/maven-public</url>
+</repository>
+```
 
-### Changed
+Now, you need to add the dependency
 
-* Modified some event priorities.
-* Now SimpleItem\#getDisplayName and SimpleItem\#getLore will return empty values to avoid errors.
-* Now GUIs are updated every tick.
+```markup
+<!-- SuperCoreAPI -->
+<dependency>
+    <groupId>xyz.theprogramsrc</groupId>
+    <artifactId>SuperCoreAPI</artifactId>
+    <version>{LAST VERSION}</version>
+</dependency>
+```
 
+Latest SuperCoreAPI Version: [GitHub](https://github.com/TheProgramSrc/SuperCoreAPI/releases/latest)
 
+{% hint style="info" %}
+ You must include these settings inside your pom.xml file.
+{% endhint %}
 
