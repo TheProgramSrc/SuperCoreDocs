@@ -12,7 +12,7 @@ First, you need to add the repository for the plugin, if you already have the re
 <!-- SuperCoreAPI -->
 <repository>
     <id>CodeMC</id>
-    <url>https://repo.codemc.org/repository/maven-public</url>
+    <url>https://repo.theprogramsrc.xyz/repository/maven-public</url>
 </repository>
 ```
 
@@ -27,9 +27,9 @@ Now, you need to add the dependency
 </dependency>
 ```
 
-Latest SuperCoreAPI Version: [GitHub](https://github.com/TheProgramSrc/SuperCoreAPI/releases/latest)
+Latest SuperCoreAPI Version: [GitHub](https://github.com/TheProgramSrc/SuperCoreAPI/releases/latest). Those settings should be placed in your `pom.xml` file.
 
-{% hint style="info" %}
- You must include these settings inside your pom.xml file.
+{% hint style="warning" %}
+If you want to use versions older or equals than the `v2.4.9` you may don't find it because of the migration to our own repository.
 {% endhint %}
 

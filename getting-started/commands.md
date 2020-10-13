@@ -4,9 +4,9 @@ description: Create custom commands with SuperCoreAPI
 
 # Commands
 
-When you use Commands in SuperCoreAPI you don't need to add them to your `plugin.yml` file nor register them, you just need to initialize the class. To define a class as a command you need to extend it to `SpigotCommand` for Spigot, or `BungeeCommand` for BungeeCord. 
+When you use Commands in SuperCoreAPI you don't need to add them to your `plugin.yml` file nor register them, you just need to initialize the class. To define a class as a command you need to extend it to `SpigotCommand` for Spigot, or `BungeeCommand` for BungeeCord.
 
-### Spigot Command Example
+## Spigot Command Example
 
 ```java
 package xyz.theprogramsrc.myplugin.commands;
@@ -21,7 +21,7 @@ public MySpigotCommand extends SpigotCommand{
     public String getCommand() {
         return "mycommand"; // Define the command to execute
     }
-    
+
     /*
      * The onPlayerExecute(Player, String[]) method it's executed when a player
      * execute the command. The return object is a CommandResult, the types are:
@@ -36,11 +36,11 @@ public MySpigotCommand extends SpigotCommand{
         if(!player.hasPermission("example.permission")){
             return CommandResult.NO_PERMISSION; // Send no permission message
         }
-        
+
         if(!player.hasPermission("example.access")){
             return CommandResult.NO_ACCESS; // Send no access message
         }
-        
+
         if(!isOnlyForConsole){
             return CommandResult.NOT_SUPPORTED; // Send a not supported message
         }
@@ -53,14 +53,13 @@ public MySpigotCommand extends SpigotCommand{
     }
 
 }
-
 ```
 
 {% hint style="info" %}
 The imports for `CommandResult` and `SpigotConsole` are needed to handle the execute methods.
 {% endhint %}
 
-### Bungee Command Example
+## Bungee Command Example
 
 SOON
 

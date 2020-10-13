@@ -4,15 +4,15 @@ description: The main class using SuperCoreAPI
 
 # Main Class
 
-### Spigot
+## Spigot
 
 To create your main class in spigot you extend your class to `SpigotPlugin` and then add the methods `onPluginLoad()` `onPluginEnable()` `onPluginDisable()`, those are like the methods from the SpigotAPI but they're executed after initializing the features from SuperCoreAPI.
 
-### BungeeCord
+## BungeeCord
 
 In Bungee plugins, it's the same way that Spigot but you need to extend your class to `BungeePlugin` instead of `SpigotPlugin`
 
-### Example:
+## Example:
 
 ```java
 package xyz.theprogramsrc.myplugin;
@@ -25,12 +25,12 @@ public MySpigotPlugin extends SpigotPlugin{
     public void onPluginLoad(){
         // On load stuff
     }
-    
+
     @Override
     public void onPluginEnable(){
         // On enable stuff
     }
-    
+
     @Override
     public void onPluginDisable(){
         // On disable stuff

@@ -6,7 +6,7 @@ description: How to work with listeners in SuperCoreAPI
 
 In SuperCoreAPI you don't need to register listeners. You just need to initialize the class containing the listeners. To define a class as listener you need to extend it to `SpigotModule` in spigot, or `BungeeModule` in BungeeCord.
 
-### Auto-Register Listeners
+## Auto-Register Listeners
 
 ```java
 package xyz.theprogramsrc.myplugin.listeners;
@@ -16,7 +16,7 @@ import xyz.theprogramsrc.supercoreapi.spigot.SpigotModule;
 public MySpigotListener extends SpigotModule{
 
     // Some Listeners Stuff
-    
+
 }
 ```
 
@@ -24,7 +24,7 @@ public MySpigotListener extends SpigotModule{
 If you want to manually register the listener you need to add the constructor to the class and add the super argument boolean as false.
 {% endhint %}
 
-### Disabling the Auto-Register
+## Disabling the Auto-Register
 
 If for any reason you don't want to auto-register the listener you can disable the auto-register listener. Take a look into the example:
 
@@ -38,7 +38,7 @@ public MySpigotListener extends SpigotModule{
     public MySpigotListener(){
         super(false);  // False to disable the auto-register
     }
-    
+
 }
 ```
 
@@ -57,7 +57,7 @@ public MySpigotListener extends SpigotModule{
     public void onLoad(){
         // Some awesome code
     }
-    
+
 }
 ```
 
