@@ -11,7 +11,7 @@ First, you need to add the repository for the plugin, if you already have the re
 ```markup
 <!-- SuperCoreAPI -->
 <repository>
-    <id>CodeMC</id>
+    <id>TheProgramSrc</id>
     <url>https://repo.theprogramsrc.xyz/repository/maven-public</url>
 </repository>
 ```
