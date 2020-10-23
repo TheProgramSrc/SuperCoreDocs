@@ -61,3 +61,5 @@ public MySpigotListener extends SpigotModule{
 }
 ```
 
+To register the module just initialize the class like this: `new MyListener()`
+
