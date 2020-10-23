@@ -56,8 +56,10 @@ public MySpigotCommand extends SpigotCommand{
 ```
 
 {% hint style="info" %}
-The imports for `CommandResult` and `SpigotConsole` are needed to handle the execute methods.
+The imports for `CommandResult` and `SpigotConsole` are needed to handle the execution methods.
 {% endhint %}
+
+To register the command just initialize the Command Class, like `new MyCommand()`
 
 ## Bungee Command Example
 
