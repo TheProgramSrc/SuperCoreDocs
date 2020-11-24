@@ -55,8 +55,10 @@ public MySpigotCommand extends SpigotCommand{
 }
 ```
 
+If you override the method getPermission, SuperCoreAPI will automatically check if the player who executed the command have the permissions to use it, and only if the player have the permission the method onPlayerExecute will be executed, otherwise a no permission message will be sent.
+
 {% hint style="info" %}
-The imports for `CommandResult` and `SpigotConsole` are needed to handle the execution methods.
+The methods `onPlayerExecute` and `onConsoleExecute` require a `CommandResult` because it's the way to tell SuperCoreAPI what should do, send a specific message, or, do nothing.
 {% endhint %}
 
 To register the command just initialize the Command Class, like `new MyCommand()`

@@ -8,3 +8,12 @@
 * [Listeners](getting-started/listeners.md)
 * [Commands](getting-started/commands.md)
 
+## Utilites
+
+* [Translations](utilites/translations.md)
+
+---
+
+* [Support](https://go.theprogramsrc.xyz/discord)
+* [JavaDocs](https://hub.theprogramsrc.xyz/javadocs/supercoreapi)
+
