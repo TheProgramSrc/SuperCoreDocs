@@ -69,3 +69,14 @@ public enum Translations implements TranslationPack {
 }
 ```
 
+Now, to make this work you need to register the translation, you can do it in your main class \(That need to be extended to `SpigotPlugin` or `BungeePlugin`\) and add the following line of code to your `onPluginEnable` method: 
+
+```java
+@Override
+public void onPluginEnable(){
+    // ...
+    this.registerTranslation(Translations.class);
+    // ...
+}
+```
+
